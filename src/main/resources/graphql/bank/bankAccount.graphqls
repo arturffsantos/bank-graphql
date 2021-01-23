@@ -1,0 +1,4 @@
+type BankAccount {
+    id: ID!
+    currency: Currency!
+}
