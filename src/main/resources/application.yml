@@ -4,7 +4,7 @@ server:
 
 graphql:
   servlet:
-    max-query-depth: 10
+    max-query-depth: 20
   playground:
     headers:
       Authorization: Bearer TOKEN
