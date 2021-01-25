@@ -5,6 +5,7 @@ server:
 graphql:
   servlet:
     max-query-depth: 20
+    exception-handlers-enabled: true
   playground:
     headers:
       Authorization: Bearer TOKEN
