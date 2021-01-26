@@ -1,7 +1,7 @@
-package com.bank.graphql.demo.resolver.query;
+package com.bank.graphql.demo.resolver.bank.query;
 
-import com.bank.graphql.demo.domain.BankAccount;
-import com.bank.graphql.demo.domain.Currency;
+import com.bank.graphql.demo.domain.bank.BankAccount;
+import com.bank.graphql.demo.domain.bank.Currency;
 import graphql.kickstart.tools.GraphQLQueryResolver;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

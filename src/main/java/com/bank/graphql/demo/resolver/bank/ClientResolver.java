@@ -1,14 +1,13 @@
-package com.bank.graphql.demo.resolver;
+package com.bank.graphql.demo.resolver.bank;
 
-import com.bank.graphql.demo.domain.BankAccount;
-import com.bank.graphql.demo.domain.Client;
+import com.bank.graphql.demo.domain.bank.BankAccount;
+import com.bank.graphql.demo.domain.bank.Client;
 import graphql.execution.DataFetcherResult;
 import graphql.kickstart.execution.error.GenericGraphQLError;
 import graphql.kickstart.tools.GraphQLResolver;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
-import java.util.List;
 import java.util.UUID;
 
 @Slf4j

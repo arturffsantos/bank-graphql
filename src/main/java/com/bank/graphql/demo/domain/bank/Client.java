@@ -1,4 +1,4 @@
-package com.bank.graphql.demo.domain;
+package com.bank.graphql.demo.domain.bank;
 
 import lombok.Builder;
 import lombok.Value;
