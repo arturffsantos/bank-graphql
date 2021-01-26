@@ -1,0 +1,4 @@
+# All available mutations on this graphql server
+type Mutation {
+    createBankAccount(input: CreateBankAccountInput!): BankAccount
+}
