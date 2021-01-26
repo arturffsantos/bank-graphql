@@ -1,4 +1,4 @@
-package com.bank.graphql.demo.resolver.bank.mutations;
+package com.bank.graphql.demo.resolver.bank.mutation;
 
 import com.bank.graphql.demo.domain.bank.BankAccount;
 import com.bank.graphql.demo.domain.bank.Currency;
