@@ -8,6 +8,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
+import java.time.Clock;
 import java.time.LocalDate;
 import java.time.ZonedDateTime;
 import java.util.UUID;
@@ -17,14 +18,16 @@ import java.util.UUID;
 @RequiredArgsConstructor
 public class BankAccountMutation implements GraphQLMutationResolver {
 
+    private final Clock clock;
+
     public BankAccount createBankAccount(CreateBankAccountInput input){
         log.info("Creating new account for {}", input);
 
         return BankAccount.builder()
                 .id(UUID.randomUUID())
                 .currency(Currency.BRL)
-                .createdAt(ZonedDateTime.now())
-                .createdOn(LocalDate.now())
+                .createdAt(ZonedDateTime.now(clock))
+                .createdOn(LocalDate.now(clock))
                 .build();
     }
 }
