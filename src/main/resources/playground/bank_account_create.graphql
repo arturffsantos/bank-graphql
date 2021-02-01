@@ -2,8 +2,11 @@
 mutation CREATE_BANK_ACCOUNT {
     createBankAccount(input: {
         firstName: "Anne"
+        age: 20
     }) {
         id
         currency
+        createdAt
+        createdOn
     }
 }
